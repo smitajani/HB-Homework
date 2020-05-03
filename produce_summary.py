@@ -1,3 +1,11 @@
+
+""" Open raw data files the and print to the sales report 
+"""
+
+# Iteration-1: Fix the report to print correct values - melon, count & amount, 
+# on each line
+
+
 print("Day 1")
 the_file = open("um-deliveries-20140519.txt")
 for line in the_file:
@@ -5,8 +13,8 @@ for line in the_file:
     words = line.split('|')
 
     melon = words[0]
-    count = words[0]
-    amount = words[0]
+    count = words[1]
+    amount = words[2]
 
     print("Delivered {} {}s for total of ${}".format(
         count, melon, amount))
@@ -20,8 +28,8 @@ for line in the_file:
     words = line.split('|')
 
     melon = words[0]
-    count = words[0]
-    amount = words[0]
+    count = words[1]
+    amount = words[2]
 
     print("Delivered {} {}s for total of ${}".format(
         count, melon, amount))
@@ -35,8 +43,8 @@ for line in the_file:
     words = line.split('|')
 
     melon = words[0]
-    count = words[0]
-    amount = words[0]
+    count = words[1]
+    amount = words[2]
 
     print("Delivered {} {}s for total of ${}".format(
         count, melon, amount))
